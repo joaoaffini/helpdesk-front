@@ -26,9 +26,10 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
+import { NavComponent } from './components/nav/nav.component';
 
 // Componentes do projeto
-import { NavComponent } from './components/nav/nav.component';
+/*import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { TecnicoListComponent } from './components/tecnico/tecnico-list/tecnico-list.component';
@@ -46,12 +47,13 @@ import { ClienteUpdateComponent } from './components/cliente/cliente-update/clie
 import { ChamadoListComponent } from './components/chamado/chamado-list/chamado-list.component';
 import { ChamadoCreateComponent } from './components/chamado/chamado-create/chamado-create.component';
 import { ChamadoUpdateComponent } from './components/chamado/chamado-update/chamado-update.component';
-import { ChamadoReadComponent } from './components/chamado/chamado-read/chamado-read.component';
+import { ChamadoReadComponent } from './components/chamado/chamado-read/chamado-read.component';*/
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
+   /* NavComponent,
     HomeComponent,
     HeaderComponent,
     TecnicoListComponent,
@@ -66,7 +68,7 @@ import { ChamadoReadComponent } from './components/chamado/chamado-read/chamado-
     ChamadoListComponent,
     ChamadoCreateComponent,
     ChamadoUpdateComponent,
-    ChamadoReadComponent
+    ChamadoReadComponent*/
   ],
   imports: [
     BrowserModule,
@@ -91,15 +93,8 @@ import { ChamadoReadComponent } from './components/chamado/chamado-read/chamado-
     MatTableModule,
     MatIconModule,
     MatListModule,
-    MatCardModule,
-    ToastrModule.forRoot({
-      timeOut: 4000,
-      closeButton: true,
-      progressBar: true
-    }),
-    NgxMaskModule.forRoot()
+    MatCardModule
   ],
-  providers: [AuthInterceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
